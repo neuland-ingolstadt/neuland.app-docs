@@ -2,10 +2,10 @@
 
 ## Is it secure to use Neuland Next?
 
-Of course! We take security very seriously.
-Neuland Next is built with the latest technologies and follows best practices for security and privacy.
-We do not store any personal data on our servers. All data is stored locally on your device and is not shared with third parties.
-All source code is available on GitHub and is built and published publicly in our CI/CD pipeline.
+Of course!
+Neuland Next is built with the latest technologies and follows best practices for security and data protection. The app has official access to THI's API and communicates directly with it.
+All data provided by THI is processed exclusively on your device - it never leaves your device or gets shared with third parties.
+We do not store any personal data on our servers.
 
 ### How does the app access my data?
 

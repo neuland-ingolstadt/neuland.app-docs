@@ -2,11 +2,10 @@
 
 ## Ist es sicher, Neuland Next zu verwenden?
 
-Natürlich! Wir nehmen Sicherheit sehr ernst.
-Neuland Next wird mit den neuesten Technologien entwickelt und folgt den besten Praktiken für Sicherheit und Datenschutz.
-Wir speichern keine persönlichen Daten auf unseren Servern. Alle Daten werden lokal auf deinem Gerät gespeichert und nicht mit Dritten geteilt.
-Sämtlicher Source Code ist auf GitHub verfügbar und wird von dort öffentlich in unserer CI/CD Pipeline gebaut und veröffentlicht.
-
+Natürlich!
+Neuland Next wird mit den neuesten Technologien entwickelt und folgt den besten Praktiken für Sicherheit und Datenschutz. Die App hat offiziellen Zugang zur API der THI und kommuniziert direkt mit ihr.
+Alle von der THI bereitgestellten Daten werden ausschließlich lokal auf deinem Gerät verarbeitet - sie verlassen es nicht und werden nicht an Dritte weitergegeben.
+Persönliche Daten speichern wir grundsätzlich nicht auf unseren Servern.
 ### Wie greift die App auf meine Daten zu?
 
 Um mit den Servern der Hochschule zu kommunizieren, verwenden wir die offizielle und verschlüsselte THI-API, welche auch von der offiziellen App genutzt wird.

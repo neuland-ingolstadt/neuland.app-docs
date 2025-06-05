@@ -142,7 +142,7 @@
 		"questions": [
 			{
 				"question": "Ist es sicher, Neuland Next zu verwenden?",
-				"answer": "Natürlich! Wir nehmen Sicherheit sehr ernst. Neuland Next wird mit den neuesten Technologien entwickelt und folgt den besten Praktiken für Sicherheit und Datenschutz. Wir speichern keine persönlichen Daten auf unseren Servern. Alle Daten werden lokal auf deinem Gerät gespeichert und nicht mit Dritten geteilt."
+				"answer": "Natürlich! Neuland Next wird mit den neuesten Technologien entwickelt und folgt den besten Praktiken für Sicherheit und Datenschutz. Die App hat offiziellen Zugang zur API der THI und kommuniziert direkt mit ihr. Alle von der THI bereitgestellten Daten werden ausschließlich lokal auf deinem Gerät verarbeitet – sie verlassen es nicht und werden nicht an Dritte weitergegeben. Persönliche Daten speichern wir grundsätzlich nicht auf unseren Servern."
 			},
 			{
 				"question": "Was passiert mit meinen Anmeldedaten?",
