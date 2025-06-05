@@ -122,6 +122,10 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 						feedback={{
 							content: 'Feedback'
 						}}
+						toc={{
+							backToTop: dictionary.toc.backToTop,
+							title: dictionary.toc.onThisPage
+						}}
 						lastUpdated={<LastUpdated> {dictionary.lastUpdated}</LastUpdated>}
 						editLink={dictionary.editPage}
 						footer={<Footer />}

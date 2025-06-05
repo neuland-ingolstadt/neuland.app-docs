@@ -11,6 +11,10 @@ export default {
 		title: 'Neuland Next',
 		description: 'Your unofficial app for the TH Ingolstadt'
 	},
+	toc: {
+		onThisPage: 'On this page',
+		backToTop: 'Back to top'
+	},
 	search: {
 		placeholder: 'Search documentation...',
 		emptyResult: 'No results found',

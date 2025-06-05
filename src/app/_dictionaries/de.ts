@@ -13,6 +13,10 @@ export default {
 		title: 'Neuland Next',
 		description: 'Deine inoffizielle App für die TH Ingolstadt'
 	},
+	toc: {
+		onThisPage: 'Auf dieser Seite',
+		backToTop: 'Nach oben scrollen'
+	},
 	search: {
 		placeholder: 'Dokumentation durchsuchen...',
 		emptyResult: 'Keine Ergebnisse',
