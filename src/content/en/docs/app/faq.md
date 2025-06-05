@@ -5,6 +5,7 @@
 Of course! We take security very seriously.
 Neuland Next is built with the latest technologies and follows best practices for security and privacy.
 We do not store any personal data on our servers. All data is stored locally on your device and is not shared with third parties.
+All source code is available on GitHub and is built and published publicly in our CI/CD pipeline.
 
 ### How does the app access my data?
 

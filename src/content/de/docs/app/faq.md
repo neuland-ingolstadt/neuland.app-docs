@@ -5,6 +5,7 @@
 Natürlich! Wir nehmen Sicherheit sehr ernst.
 Neuland Next wird mit den neuesten Technologien entwickelt und folgt den besten Praktiken für Sicherheit und Datenschutz.
 Wir speichern keine persönlichen Daten auf unseren Servern. Alle Daten werden lokal auf deinem Gerät gespeichert und nicht mit Dritten geteilt.
+Sämtlicher Source Code ist auf GitHub verfügbar und wird von dort öffentlich in unserer CI/CD Pipeline gebaut und veröffentlicht.
 
 ### Wie greift die App auf meine Daten zu?
 
