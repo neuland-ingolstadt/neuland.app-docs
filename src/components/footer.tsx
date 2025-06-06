@@ -12,7 +12,11 @@ import NeulandLogo from './icons/logo'
 
 export function Footer() {
 	const { t } = useTranslation()
-
+	const fullCommitHash = process.env.NEXT_PUBLIC_COMMIT_HASH || 'development'
+	const commitHash =
+		typeof fullCommitHash === 'string' && fullCommitHash !== 'development'
+			? fullCommitHash.substring(0, 7)
+			: fullCommitHash
 	return (
 		<footer className="bg-muted/10 border-t">
 			<div className="mx-auto max-w-7xl px-6 py-12 lg:px-8">
@@ -113,6 +117,10 @@ export function Footer() {
 						{t('footer.copyright.text')}
 						<br />
 						{t('footer.copyright.rights')}
+						<br />
+						<div className="text-xs text-muted-foreground/40 mt-2 font-mono">
+							Build: <span title="Git commit hash">{commitHash}</span>
+						</div>
 					</p>
 				</div>
 			</div>

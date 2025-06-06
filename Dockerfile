@@ -23,8 +23,11 @@ RUN npm run build
 FROM node:24-alpine AS runner
 WORKDIR /app
 
+ARG COMMIT_HASH
+
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
+ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH}
 
 RUN addgroup --system --gid 1001 nodejs
 RUN adduser --system --uid 1001 nextjs

@@ -106,7 +106,7 @@ export function TestimonialsSection() {
 					<div className="flex justify-center items-center gap-8 mt-6">
 						<RatingBox
 							platform={t('testimonials.ratings.platforms.appStore')}
-							rating="4.9"
+							rating="5.0"
 						/>
 						<RatingBox
 							platform={t('testimonials.ratings.platforms.googlePlay')}
