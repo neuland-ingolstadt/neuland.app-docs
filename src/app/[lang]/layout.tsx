@@ -1,14 +1,12 @@
 import type { Metadata } from 'next'
-import { Banner, Search } from 'nextra/components'
+import { Banner, Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
-import 'nextra-theme-docs/style.css'
 
 import type { FC, ReactNode } from 'react'
 import { Footer } from '@/components/footer'
 import NeulandLogo from '@/components/icons/logo'
 import { LocaleSwitcher } from '@/components/locale-switcher'
-import { ThemeProvider } from '@/components/theme-provider'
 import { ThemeToggle } from '@/components/theme-toggle'
 import { getDictionary } from '../_dictionaries/get-dictionary'
 import './global.css'
@@ -73,66 +71,59 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 
 	return (
 		<html lang="de" dir="ltr" suppressHydrationWarning>
+			<Head />
 			<body>
-				<ThemeProvider>
-					<a
-						href="#main-content"
-						className="fixed left-0 top-0 z-50 -translate-y-full bg-primary px-4 py-2 text-primary-foreground transition-transform focus:translate-y-0"
-					>
-						{dictionary.skipToContent}
-					</a>
-					<Layout
-						sidebar={{
-							autoCollapse: false,
-							defaultMenuCollapseLevel: 1,
-							toggleButton: true
-						}}
-						banner={banner}
-						navbar={
-							<Navbar
-								logo={
-									<div className="flex items-center gap-2">
-										<NeulandLogo
-											className="h-6 w-6 rounded-lg object-contain"
-											color="currentColor"
-										/>
-										<span className="text-lg font-bold text-foreground">
-											Neuland Next
-										</span>
-									</div>
-								}
-								className="backdrop-blur-md bg-background/60"
-							>
+				<Layout
+					sidebar={{
+						autoCollapse: false,
+						defaultMenuCollapseLevel: 1,
+						toggleButton: true
+					}}
+					banner={banner}
+					navbar={
+						<Navbar
+							logo={
 								<div className="flex items-center gap-2">
-									<ThemeToggle />
-									<LocaleSwitcher />
+									<NeulandLogo
+										className="h-6 w-6 rounded-lg object-contain"
+										color="currentColor"
+									/>
+									<span className="text-lg font-bold text-foreground">
+										Neuland Next
+									</span>
 								</div>
-							</Navbar>
-						}
-						search={
-							<Search
-								placeholder={dictionary.search.placeholder}
-								emptyResult={dictionary.search.emptyResult}
-								errorText={dictionary.search.errorText}
-								loading={dictionary.search.loading}
-							/>
-						}
-						pageMap={pageMap}
-						docsRepositoryBase="https://github.com/neuland-ingolstadt/neuland.app-native/docs"
-						feedback={{
-							content: 'Feedback'
-						}}
-						toc={{
-							backToTop: dictionary.toc.backToTop,
-							title: dictionary.toc.onThisPage
-						}}
-						lastUpdated={<LastUpdated> {dictionary.lastUpdated}</LastUpdated>}
-						editLink={dictionary.editPage}
-						footer={<Footer />}
-					>
-						{children}
-					</Layout>
-				</ThemeProvider>
+							}
+							className="backdrop-blur-md bg-background/60"
+						>
+							<div className="flex items-center gap-2">
+								<ThemeToggle />
+								<LocaleSwitcher />
+							</div>
+						</Navbar>
+					}
+					search={
+						<Search
+							placeholder={dictionary.search.placeholder}
+							emptyResult={dictionary.search.emptyResult}
+							errorText={dictionary.search.errorText}
+							loading={dictionary.search.loading}
+						/>
+					}
+					pageMap={pageMap}
+					docsRepositoryBase="https://github.com/neuland-ingolstadt/neuland.app-native/docs"
+					feedback={{
+						content: 'Feedback'
+					}}
+					toc={{
+						backToTop: dictionary.toc.backToTop,
+						title: dictionary.toc.onThisPage
+					}}
+					lastUpdated={<LastUpdated> {dictionary.lastUpdated}</LastUpdated>}
+					editLink={dictionary.editPage}
+					footer={<Footer />}
+				>
+					{children}
+				</Layout>
 			</body>
 		</html>
 	)
