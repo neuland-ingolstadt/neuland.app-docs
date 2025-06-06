@@ -36,7 +36,10 @@ export async function generateMetadata({
 			alternateLocale: resolvedParams.lang === 'en' ? 'de' : 'en',
 			title: dictionary.metadata.title,
 			description: dictionary.metadata.description,
-			siteName: dictionary.metadata.title
+			siteName: dictionary.metadata.title,
+			images: {
+				url: '/og-image.webp'
+			}
 		},
 		twitter: {
 			title: dictionary.metadata.title,

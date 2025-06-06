@@ -8,8 +8,9 @@ export default {
 	by: 'by',
 	skipToContent: 'Skip to main content',
 	metadata: {
-		title: 'Neuland Next',
-		description: 'Your unofficial app for the TH Ingolstadt'
+		title: 'Neuland Next - Your unofficial app for the TH Ingolstadt',
+		description:
+			'Neuland Next is an unofficial app for the Technical University of Ingolstadt, developed by Neuland Ingolstadt e. V. - by students for students.'
 	},
 	toc: {
 		onThisPage: 'On this page',

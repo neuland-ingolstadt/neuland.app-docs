@@ -10,8 +10,9 @@ export default {
 	by: 'von',
 	skipToContent: 'Zum Hauptinhalt springen',
 	metadata: {
-		title: 'Neuland Next',
-		description: 'Deine inoffizielle App für die TH Ingolstadt'
+		title: 'Neuland Next - Deine inoffizielle App für die TH Ingolstadt',
+		description:
+			'Neuland Next ist eine inoffizielle App für die Technische Hochschule Ingolstadt, die von Neuland Ingolstadt e. V. entwickelt wurde - von Studierenden für Studierende.'
 	},
 	toc: {
 		onThisPage: 'Auf dieser Seite',
