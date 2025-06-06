@@ -17,6 +17,9 @@ ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_SHARP_PATH=/app/node_modules/sharp
 RUN realpath . 
 
+ARG COMMIT_HASH
+ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH}
+
 RUN npm run build
 
 # Production image, copy all the files and run next
@@ -24,7 +27,6 @@ FROM node:24-alpine AS runner
 WORKDIR /app
 
 ARG COMMIT_HASH
-
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
 ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH}
