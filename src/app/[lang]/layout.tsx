@@ -113,7 +113,7 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 						/>
 					}
 					pageMap={pageMap}
-					docsRepositoryBase="https://github.com/neuland-ingolstadt/neuland.app-native/docs"
+					docsRepositoryBase="https://github.com/neuland-ingolstadt/neuland.app-docs/tree/main"
 					feedback={{
 						content: 'Feedback'
 					}}

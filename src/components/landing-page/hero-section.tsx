@@ -206,40 +206,30 @@ export function HeroSection() {
 							className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
 						>
 							<div className="flex flex-col sm:flex-row gap-4">
-								<motion.div
-									whileHover={{ scale: 1.05 }}
-									whileTap={{ scale: 0.95 }}
+								<Button
+									size="lg"
+									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white border-0 hover:scale-105 active:scale-95 cursor-pointer"
+									onClick={() => {
+										window.open('https://neuland.app/get', '_blank')
+									}}
 								>
-									<Button
-										size="lg"
-										className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white border-0"
-										onClick={() => {
-											window.open('https://neuland.app/get', '_blank')
-										}}
-									>
-										<Download className="mr-2 h-5 w-5" />
-										{getDownloadButtonText()}
-									</Button>
-								</motion.div>
-								<motion.div
-									whileHover={{ scale: 1.05 }}
-									whileTap={{ scale: 0.95 }}
+									<Download className="mr-2 h-5 w-5" />
+									{getDownloadButtonText()}
+								</Button>
+								<Button
+									size="lg"
+									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:scale-105 active:scale-95 cursor-pointer"
+									onClick={() => {
+										window.open(
+											'https://web.neuland.app',
+											'_blank',
+											'noopener,noreferrer'
+										)
+									}}
 								>
-									<Button
-										size="lg"
-										className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20"
-										onClick={() => {
-											window.open(
-												'https://web.neuland.app',
-												'_blank',
-												'noopener,noreferrer'
-											)
-										}}
-									>
-										<Globe className="mr-2 h-5 w-5" />
-										{t('hero.buttons.webVersion')}
-									</Button>
-								</motion.div>
+									<Globe className="mr-2 h-5 w-5" />
+									{t('hero.buttons.webVersion')}
+								</Button>
 							</div>
 						</motion.div>
 					</motion.div>
