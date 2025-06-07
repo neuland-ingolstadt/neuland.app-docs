@@ -96,7 +96,6 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 									</span>
 								</div>
 							}
-							className="backdrop-blur-md bg-background/60"
 						>
 							<div className="flex items-center gap-2">
 								<ThemeToggle />

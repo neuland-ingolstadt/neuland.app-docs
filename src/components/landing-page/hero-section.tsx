@@ -207,28 +207,32 @@ export function HeroSection() {
 						>
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Button
+									asChild
 									size="lg"
 									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white border-0 hover:scale-105 active:scale-95 cursor-pointer"
-									onClick={() => {
-										window.open('https://neuland.app/get', '_blank')
-									}}
 								>
-									<Download className="mr-2 h-5 w-5" />
-									{getDownloadButtonText()}
+									<a
+										href="https://neuland.app/get"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Download className="mr-2 h-5 w-5" />
+										{getDownloadButtonText()}
+									</a>
 								</Button>
 								<Button
+									asChild
 									size="lg"
-									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:scale-105 active:scale-95 cursor-pointer"
-									onClick={() => {
-										window.open(
-											'https://web.neuland.app',
-											'_blank',
-											'noopener,noreferrer'
-										)
-									}}
+									className="relative z-10 px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:scale-105 active:scale-95 cursor-pointer pointer-events-auto"
 								>
-									<Globe className="mr-2 h-5 w-5" />
-									{t('hero.buttons.webVersion')}
+									<a
+										href="https://web.neuland.app"
+										target="_blank"
+										rel="noopener noreferrer"
+									>
+										<Globe className="mr-2 h-5 w-5" />
+										{t('hero.buttons.webVersion')}
+									</a>
 								</Button>
 							</div>
 						</motion.div>
