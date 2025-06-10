@@ -31,8 +31,8 @@ export function ContributingButtons({ buttons }: ContributingButtonsProps) {
 				>
 					<a
 						href={button.href}
-						target="_blank"
-						rel="noopener noreferrer"
+						target={button.external ? '_blank' : undefined}
+						rel={button.external ? 'noopener noreferrer' : undefined}
 						className="inline-flex items-center gap-2"
 					>
 						<button.icon className="h-5 w-5" />

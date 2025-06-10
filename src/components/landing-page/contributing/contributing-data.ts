@@ -49,13 +49,15 @@ export function useContributingButtons() {
 			href: '/docs/app/contribute',
 			icon: BookText,
 			label: t('contributing.buttons.docs.label'),
-			variant: 'default'
+			variant: 'default',
+			external: false
 		},
 		{
 			href: 'https://neuland-ingolstadt.de',
 			icon: Users,
 			label: t('contributing.buttons.association.label'),
-			variant: 'outline'
+			variant: 'outline',
+			external: true
 		}
 	]
 

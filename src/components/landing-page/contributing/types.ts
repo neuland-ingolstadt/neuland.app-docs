@@ -13,4 +13,5 @@ export interface ContributingButton {
 	icon: LucideIcon
 	label: string
 	variant?: 'default' | 'outline'
+	external: boolean
 }
