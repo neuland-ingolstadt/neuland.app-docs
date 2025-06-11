@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useInView, useSpring, useTransform } from 'framer-motion'
+import { useInView } from 'framer-motion'
 import { Quote } from 'lucide-react'
 import React from 'react'
 import { useTranslation } from '@/lib/useTranslations'
@@ -17,31 +17,38 @@ function RatingBox({ platform, rating }: RatingBoxProps) {
 	const { t } = useTranslation()
 	const ref = React.useRef(null)
 	const isInView = useInView(ref, { once: true, margin: '-100px' })
-
-	const ratingNumber = parseFloat(rating)
-	const spring = useSpring(0, {
-		stiffness: 50,
-		damping: 20
-	})
+	const [displayRating, setDisplayRating] = React.useState('0.0')
 
 	React.useEffect(() => {
 		if (isInView) {
-			spring.set(ratingNumber)
-		}
-	}, [isInView, ratingNumber, spring])
+			const targetRating = parseFloat(rating)
+			let currentRating = 0
+			const duration = 1000 // 1 second
+			const steps = 20
+			const increment = targetRating / steps
+			const interval = duration / steps
 
-	const displayRating = useTransform(spring, (latest) => latest.toFixed(1))
+			const timer = setInterval(() => {
+				currentRating += increment
+				if (currentRating >= targetRating) {
+					currentRating = targetRating
+					clearInterval(timer)
+				}
+				setDisplayRating(currentRating.toFixed(1))
+			}, interval)
+
+			return () => clearInterval(timer)
+		}
+	}, [isInView, rating])
 
 	return (
 		<div
 			ref={ref}
-			className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 bg-card/50 backdrop-blur-sm px-5 py-3 rounded-4xl shadow-sm border border-primary/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-md hover:shadow-yellow-600/60 "
+			className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2 bg-card/50 backdrop-blur-sm px-5 py-3 rounded-4xl shadow-sm border border-primary/20 animate-rating-box-hover"
 		>
 			<span className="font-semibold text-primary">{platform}</span>
 			<div className="flex items-center gap-1 sm:gap-2">
-				<motion.span className="text-yellow-600 font-bold">
-					{displayRating}
-				</motion.span>
+				<span className="text-yellow-600 font-bold">{displayRating}</span>
 				<span className="text-muted-foreground">
 					{t('testimonials.ratings.maxRating')}
 				</span>
@@ -66,31 +73,8 @@ export function TestimonialsSection() {
 		<section className="py-20 sm:py-32 relative overflow-hidden bg-muted/30">
 			{/* Decorative background elements */}
 			<div className="absolute inset-0 pointer-events-none">
-				<motion.div
-					className="absolute top-1/4 left-[5%] w-48 h-48 bg-yellow-500/5 rounded-full blur-3xl"
-					animate={{
-						scale: [1, 1.2, 1],
-						opacity: [0.3, 0.5, 0.3]
-					}}
-					transition={{
-						duration: 4,
-						repeat: Infinity,
-						ease: 'easeInOut'
-					}}
-				/>
-				<motion.div
-					className="absolute bottom-1/4 right-[5%] w-48 h-48 bg-yellow-500/5 rounded-full blur-3xl"
-					animate={{
-						scale: [1, 1.2, 1],
-						opacity: [0.3, 0.5, 0.3]
-					}}
-					transition={{
-						duration: 4,
-						repeat: Infinity,
-						ease: 'easeInOut',
-						delay: 1
-					}}
-				/>
+				<div className="absolute top-1/4 left-[5%] w-48 h-48 bg-yellow-500/5 rounded-full blur-3xl animate-pulse" />
+				<div className="absolute bottom-1/4 right-[5%] w-48 h-48 bg-yellow-500/5 rounded-full blur-3xl animate-pulse delay-1000" />
 			</div>
 
 			<div className="mx-auto max-w-7xl px-6 lg:px-8 relative">

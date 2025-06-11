@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from 'framer-motion'
 import Image from 'next/image'
 import { useState } from 'react'
 import Confetti from 'react-confetti-boom'
@@ -59,25 +58,16 @@ export function DownloadCard({ option }: DownloadCardProps) {
 					/>
 				</div>
 			)}
-			<motion.a
+			<a
 				href={href}
 				onClick={handleClick}
-				className="group relative block"
-				whileHover={{ scale: 1.01 }}
-				whileTap={{ scale: 0.99 }}
+				className="group relative block animate-card-hover animate-card-tap"
 			>
 				<div className="relative h-full p-8 rounded-3xl border border-primary/10 hover:border-primary/20 bg-card/40 backdrop-blur-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-0.5">
 					<div className="flex flex-col items-center text-center space-y-6">
-						<motion.div
-							whileHover={{ scale: 1.03, rotate: Icon ? 1 : -1 }}
-							transition={{ type: 'spring', stiffness: 200, damping: 20 }}
-							className="relative"
-						>
-							<motion.div
+						<div className="relative animate-icon-hover">
+							<div
 								className={`absolute inset-0 bg-gradient-to-r ${gradientColors.from} ${gradientColors.to} rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-								initial={{ opacity: 0 }}
-								whileHover={{ opacity: 1 }}
-								transition={{ duration: 0.3 }}
 							/>
 							{imageSrc && imageAlt ? (
 								<Image
@@ -92,24 +82,18 @@ export function DownloadCard({ option }: DownloadCardProps) {
 									<Icon className="h-14 w-14 text-primary relative z-10" />
 								)
 							)}
-						</motion.div>
-						<motion.div
-							className="space-y-2"
-							initial={{ opacity: 0, y: 5 }}
-							whileInView={{ opacity: 1, y: 0 }}
-							viewport={{ once: true }}
-							transition={{ duration: 0.3 }}
-						>
+						</div>
+						<div className="space-y-2">
 							<div className="text-sm font-medium text-muted-foreground/90 group-hover:text-muted-foreground/80 transition-colors">
 								{description}
 							</div>
 							<div className="text-xl font-semibold text-primary group-hover:text-primary/80 transition-all duration-500">
 								{title}
 							</div>
-						</motion.div>
+						</div>
 					</div>
 				</div>
-			</motion.a>
+			</a>
 		</div>
 	)
 }

@@ -202,7 +202,7 @@ export function HeroSection() {
 						<motion.div
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
-							transition={{ delay: 1.4, duration: 0.6 }}
+							transition={{ duration: 0.6 }}
 							className="flex flex-col sm:flex-row items-start sm:items-center gap-4"
 						>
 							<div className="flex flex-col sm:flex-row gap-4">
@@ -241,7 +241,7 @@ export function HeroSection() {
 					<motion.div
 						initial={{ opacity: 0, scale: 0.9 }}
 						animate={{ opacity: 1, scale: 1 }}
-						transition={{ delay: 0.6, duration: 0.8 }}
+						transition={{ duration: 0.8 }}
 						className="flex justify-center lg:justify-end relative hidden lg:flex"
 					>
 						<motion.div
@@ -299,281 +299,91 @@ export function HeroSection() {
 							/>
 
 							<div className="absolute w-full h-full">
-								<motion.div
-									className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2"
-									animate={{
-										y: [0, -6, 0],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut'
-									}}
-								>
+								<motion.div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-float-up">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Calendar className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												y: [0, -2, 0]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut'
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.schedule')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2"
-									animate={{
-										y: [0, 6, 0],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 1.5
-									}}
-								>
+								<motion.div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 animate-float-down">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<MapPin className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												y: [0, 2, 0]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 1.5
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.campusMap')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2"
-									animate={{
-										x: [0, -6, 0],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 3
-									}}
-								>
+								<motion.div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-float-left">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Utensils className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												x: [0, -2, 0]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 3
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.mensa')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2"
-									animate={{
-										x: [0, 6, 0],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 4.5
-									}}
-								>
+								<motion.div className="absolute right-0 top-1/2 translate-x-1/2 -translate-y-1/2 animate-float-right">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Clock className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												x: [0, 2, 0]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 4.5
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.events')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute top-1/4 right-1/4"
-									animate={{
-										scale: [1, 1.03, 1],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 2.1
-									}}
-								>
+								<motion.div className="absolute top-1/4 right-1/4 animate-float-scale">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Lock className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												scale: [1, 1.03, 1]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 2.1
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.privacy')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute top-1/4 left-1/4"
-									animate={{
-										scale: [1, 1.03, 1],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 3.6
-									}}
-								>
+								<motion.div className="absolute top-1/4 left-1/4 animate-float-scale">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Github className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												scale: [1, 1.03, 1]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 3.6
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.openSource')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute bottom-1/4 right-1/4"
-									animate={{
-										scale: [1, 1.03, 1],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 5.1
-									}}
-								>
+								<motion.div className="absolute bottom-1/4 right-1/4 animate-float-scale">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Newspaper className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												scale: [1, 1.03, 1]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 5.1
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.news')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 
-								<motion.div
-									className="absolute bottom-1/4 left-1/4"
-									animate={{
-										scale: [1, 1.03, 1],
-										opacity: [0.6, 0.8, 0.6]
-									}}
-									transition={{
-										duration: 12,
-										repeat: Infinity,
-										ease: 'easeInOut',
-										delay: 6.6
-									}}
-								>
+								<motion.div className="absolute bottom-1/4 left-1/4 animate-float-scale">
 									<div className="flex flex-col items-center gap-3">
 										<div className="w-12 h-12 rounded-xl bg-blue-500/10 backdrop-blur-xs border border-white/5 flex items-center justify-center">
 											<Volleyball className="w-6 h-6 text-white/70" />
 										</div>
-										<motion.span
-											className="text-sm text-white/70 font-medium"
-											animate={{
-												opacity: [0, 0.7, 0],
-												scale: [1, 1.03, 1]
-											}}
-											transition={{
-												duration: 12,
-												repeat: Infinity,
-												ease: 'easeInOut',
-												delay: 6.6
-											}}
-										>
+										<span className="text-sm text-white/70 font-medium">
 											{t('hero.features.campusSport')}
-										</motion.span>
+										</span>
 									</div>
 								</motion.div>
 							</div>

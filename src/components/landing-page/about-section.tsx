@@ -138,11 +138,7 @@ export function AboutSection() {
 							transition={{ duration: 0.8, ease: 'easeOut' }}
 							className="relative"
 						>
-							<motion.div
-								whileHover={{ scale: 1.02 }}
-								transition={{ type: 'spring', stiffness: 300, damping: 20 }}
-								className="aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 relative"
-							>
+							<div className="aspect-square overflow-hidden rounded-2xl bg-gray-100 dark:bg-gray-800 relative animate-about-image-hover">
 								<div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent z-10" />
 
 								<Image
@@ -153,15 +149,14 @@ export function AboutSection() {
 									className="h-full w-full object-cover"
 									priority
 								/>
-							</motion.div>
+							</div>
 
 							<motion.div
 								initial={{ opacity: 0, y: 20 }}
 								whileInView={{ opacity: 1, y: 0 }}
 								viewport={{ once: true }}
 								transition={{ delay: 0.6, duration: 0.6 }}
-								whileHover={{ scale: 1.05 }}
-								className="absolute -bottom-6 -right-6 rounded-xl bg-card p-6 shadow-2xl ring-1 ring-black/5 dark:ring-white/10 backdrop-blur-xs"
+								className="absolute -bottom-6 -right-6 rounded-xl bg-card p-6 shadow-2xl ring-1 ring-black/5 dark:ring-white/10 backdrop-blur-xs z-20"
 							>
 								<div className="text-center">
 									<motion.div
