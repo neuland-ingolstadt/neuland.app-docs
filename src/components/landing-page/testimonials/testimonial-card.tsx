@@ -32,7 +32,8 @@ export function TestimonialCard({ testimonial }: TestimonialCardProps) {
 					<div className="flex items-center gap-1">
 						{Array.from({ length: rating }).map((_, i) => (
 							<motion.div
-								key={`${author}-star`}
+								// biome-ignore lint/suspicious/noArrayIndexKey: not a problem
+								key={`${author}-star-${i}`}
 								initial={{ opacity: 0, scale: 0 }}
 								whileInView={{ opacity: 1, scale: 1 }}
 								viewport={{ once: true }}

@@ -113,15 +113,13 @@ export function Footer() {
 				</div>
 
 				<div className="mt-8 border-t pt-8">
-					<p className="text-center text-sm text-muted-foreground">
-						{t('footer.copyright.text')}
-						<br />
-						{t('footer.copyright.rights')}
-						<br />
-						<div className="text-xs text-muted-foreground/40 mt-2 font-mono">
+					<div className="text-center text-sm text-muted-foreground">
+						<p>{t('footer.copyright.text')}</p>
+						<p>{t('footer.copyright.rights')}</p>
+						<p className="text-xs text-muted-foreground/40 mt-2 font-mono">
 							Build: <span title="Git commit hash">{commitHash}</span>
-						</div>
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</footer>
