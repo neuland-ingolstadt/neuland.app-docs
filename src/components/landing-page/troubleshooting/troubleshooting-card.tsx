@@ -21,7 +21,7 @@ export function TroubleshootingCard({ card }: TroubleshootingCardProps) {
 	const BUG_SIZE = 60
 	const BUG_MARGIN = 20
 	const [bugPos, setBugPos] = useState<{ x: number; y: number; angle: number }>(
-		{ x: window.innerWidth / 2, y: window.innerHeight / 2, angle: 0 }
+		{ x: 0, y: 0, angle: 0 }
 	)
 	const animationRef = useRef<number | null>(null)
 	const [hoverTimer, setHoverTimer] = useState<NodeJS.Timeout | null>(null)
@@ -31,9 +31,21 @@ export function TroubleshootingCard({ card }: TroubleshootingCardProps) {
 		return Math.max(min, Math.min(max, val))
 	}, [])
 
+	// Set initial bug position after mount (client only)
+	React.useEffect(() => {
+		if (typeof window !== 'undefined') {
+			setBugPos({
+				x: window.innerWidth / 2,
+				y: window.innerHeight / 2,
+				angle: 0
+			})
+		}
+	}, [])
+
 	// Start bug near the card on hover
 	function handleMouseEnter(e: React.MouseEvent) {
 		if (!isBugCard) return
+		if (typeof window === 'undefined') return
 		const rect = (e.target as HTMLElement).getBoundingClientRect()
 		const startX = clamp(
 			rect.left + rect.width / 2,
@@ -64,6 +76,7 @@ export function TroubleshootingCard({ card }: TroubleshootingCardProps) {
 
 	// Natural wandering movement
 	const wander = useCallback(() => {
+		if (typeof window === 'undefined') return
 		setBugPos((prev) => {
 			const speed = 2 + Math.random() * 2 // px per frame
 			let angle = prev.angle + (Math.random() - 0.5) * 0.3 // small random turn
