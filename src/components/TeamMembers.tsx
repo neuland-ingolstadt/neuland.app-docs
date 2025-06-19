@@ -1,4 +1,4 @@
-import { Github, Instagram, Linkedin } from 'lucide-react'
+import { Github, Instagram, Linkedin, LinkIcon } from 'lucide-react'
 import Image from 'next/image'
 
 interface TeamMember {
@@ -7,7 +7,7 @@ interface TeamMember {
 	title: string
 	org?: string
 	links: {
-		icon: 'github' | 'linkedin' | 'instagram'
+		icon: 'github' | 'linkedin' | 'instagram' | 'website'
 		link: string
 	}[]
 }
@@ -19,20 +19,21 @@ interface TeamMembersProps {
 const iconMap = {
 	github: Github,
 	linkedin: Linkedin,
-	instagram: Instagram
+	instagram: Instagram,
+	website: LinkIcon
 }
 
 export function TeamMembers({ members }: TeamMembersProps) {
 	return (
-		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+		<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 overflow-visible">
 			{members.map((member) => {
 				const isManyMore = member.name.includes('many more contributors')
 				return (
 					<div
 						key={member.name}
-						className="flex flex-col items-center p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:shadow-lg transition-shadow"
+						className="flex flex-col items-center p-6 rounded-lg border border-gray-200 dark:border-gray-800 hover:shadow-lg transition-shadow overflow-visible"
 					>
-						<div className="relative w-24 h-24 mb-4">
+						<div className="relative w-24 h-24 mb-4 transition-transform duration-200 hover:scale-105 active:scale-95 z-10">
 							<Image
 								src={member.avatar}
 								alt={member.name}
@@ -62,7 +63,7 @@ export function TeamMembers({ members }: TeamMembersProps) {
 										href={link.link}
 										target="_blank"
 										rel="noopener noreferrer"
-										className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-colors"
+										className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-100 transition-all duration-200 hover:scale-110 active:scale-95"
 									>
 										<Icon className="w-5 h-5" />
 									</a>
