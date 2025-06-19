@@ -74,9 +74,9 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 					navbar={
 						<Navbar
 							logo={
-								<div className="flex items-center gap-2">
+								<div className="flex items-center gap-2 group cursor-pointer">
 									<NeulandLogo
-										className="h-6 w-6 rounded-lg object-contain"
+										className="h-6 w-6 rounded-lg object-contain transition-transform duration-300 group-hover:scale-110"
 										color="currentColor"
 									/>
 									<span className="text-lg font-bold text-foreground">

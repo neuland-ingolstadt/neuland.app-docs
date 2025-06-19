@@ -1,5 +1,11 @@
 export default {
-	features: 'Features',
+	features: {
+		title: 'Features',
+		theme: {
+			timestamp: false,
+			toc: false
+		}
+	},
 	download: 'Download',
 	faq: 'FAQ',
 	beta: 'Beta',
