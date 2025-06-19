@@ -1,6 +1,13 @@
 'use client'
 
-import { BookText, Bug, Code2, GitBranch, Palette, Users } from 'lucide-react'
+import {
+	BookText,
+	Code2,
+	GitBranch,
+	Palette,
+	SparklesIcon,
+	Users
+} from 'lucide-react'
 import { useTranslation } from '@/lib/useTranslations'
 import type { ContributingButton, ContributingCard } from './types'
 
@@ -23,7 +30,7 @@ export function useContributingCards() {
 			delay: 0.3
 		},
 		{
-			icon: Bug,
+			icon: SparklesIcon,
 			title: t('contributing.cards.testing.title'),
 			description: t('contributing.cards.testing.description'),
 			gradient: 'from-blue-400/20 to-sky-500/20',

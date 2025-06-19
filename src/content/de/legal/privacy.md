@@ -1,8 +1,3 @@
----
-editLink: false
-lastUpdated: false
----
-
 # Datenschutzerklärung der Neuland App
 
 ## Hinweise zur Datenverarbeitung
@@ -19,7 +14,7 @@ E-Mail: info@neuland-ingolstadt.de
 
 Die Technische Hochschule Ingolstadt (THI), Esplanade 10, 85049 Ingolstadt stellt Bewerbern und zugelassenen Studierenden einen Zugang zum PRIMUSS-Bewerber- und PRIMUSS-Studierendenportal zur Verfügung.
 
-Neuland Ingolstadt e.V. stellt Nutzern verschiedene Anwendungen zur Verfügung, darunter die Web-App "neuland.app" sowie native Apps namens "Neuland Next" für iOS und Android.
+Neuland Ingolstadt e.V. stellt Nutzern die "Neuland Next" zur Verfügung, die sowohl als Web-App als auch als native App für iOS und Android verfügbar ist.
 Alle Anwendungen werden im Folgenden unter dem Oberbegriff "Neuland App" zusammengefasst.
 
 Die Neuland App bietet Studierenden eine sichere, mobile Ansicht tätigkeitsbezogener Daten aus

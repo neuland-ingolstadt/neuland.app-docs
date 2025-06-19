@@ -148,8 +148,8 @@ export function TroubleshootingCard({ card }: TroubleshootingCardProps) {
 								<title>Animated bug</title>
 								<defs>
 									<radialGradient id="shadow" cx="50%" cy="50%" r="50%">
-										<stop offset="0%" stop-color="#000" stop-opacity="0.3" />
-										<stop offset="100%" stop-color="#000" stop-opacity="0" />
+										<stop offset="0%" stopColor="#000" stopOpacity="0.3" />
+										<stop offset="100%" stopColor="#000" stopOpacity="0" />
 									</radialGradient>
 								</defs>
 								{/* Shadow */}
