@@ -408,10 +408,10 @@
 
 @keyframes card-hover {
 	0% {
-		transform: scale(1);
+		/* transform: scale(1); */
 	}
 	100% {
-		transform: scale(1.02);
+		/* transform: scale(1.02); */
 	}
 }
 
@@ -434,11 +434,13 @@
 }
 
 .animate-card-hover {
-	transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+	transition:
+		border-color 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .animate-card-hover:hover {
-	animation: card-hover 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	/* animation: card-hover 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards; */
 }
 
 .animate-card-tap:active {
@@ -455,19 +457,19 @@
 
 @keyframes image-hover {
 	0% {
-		transform: scale(1);
+		/* transform: scale(1); */
 	}
 	100% {
-		transform: scale(1.01);
+		/* transform: scale(1.01); */
 	}
 }
 
 @keyframes image-tap {
 	0% {
-		transform: scale(1);
+		/* transform: scale(1); */
 	}
 	100% {
-		transform: scale(0.99);
+		/* transform: scale(0.99); */
 	}
 }
 
@@ -476,11 +478,11 @@
 }
 
 .animate-image-hover:hover {
-	animation: image-hover 0.3s ease forwards;
+	/* animation: image-hover 0.3s ease forwards; */
 }
 
 .animate-image-hover:active {
-	animation: image-tap 0.3s ease forwards;
+	/* animation: image-tap 0.3s ease forwards; */
 }
 
 @keyframes about-image-hover {

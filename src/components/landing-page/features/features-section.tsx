@@ -1,5 +1,5 @@
 'use client'
-import { AnimatePresence, motion } from 'framer-motion'
+import { AnimatePresence, easeIn, easeOut, motion } from 'framer-motion'
 import { ChevronRight, Sparkles } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { useTranslation } from '@/lib/useTranslations'
@@ -25,7 +25,7 @@ const itemVariants = {
 		y: 0,
 		transition: {
 			duration: 0.4,
-			ease: 'easeOut'
+			ease: easeOut
 		}
 	},
 	exit: {
@@ -33,7 +33,7 @@ const itemVariants = {
 		y: -10,
 		transition: {
 			duration: 0.2,
-			ease: 'easeIn'
+			ease: easeIn
 		}
 	}
 }

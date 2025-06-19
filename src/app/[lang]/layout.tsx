@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Banner, Head, Search } from 'nextra/components'
+import { Head, Search } from 'nextra/components'
 import { getPageMap } from 'nextra/page-map'
 import { LastUpdated, Layout, Navbar } from 'nextra-theme-docs'
 
@@ -48,17 +48,6 @@ export async function generateMetadata({
 	}
 }
 
-const banner = (
-	<Banner storageKey="release-0.13">
-		<a
-			href="https://neuland-ingolstadt.de/blog/neuland-next-0-13"
-			target="_blank"
-			rel="noopener"
-		>
-			Neuland Next 0.13 ist verfügbar 🎉
-		</a>
-	</Banner>
-)
 type LayoutProps = Readonly<{
 	children: ReactNode
 	params: Promise<{
@@ -82,7 +71,6 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 						defaultMenuCollapseLevel: 1,
 						toggleButton: true
 					}}
-					banner={banner}
 					navbar={
 						<Navbar
 							logo={

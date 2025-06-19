@@ -1,6 +1,6 @@
 'use client'
 
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { easeOut, motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronRight, HelpCircle } from 'lucide-react'
 import { useRef, useState } from 'react'
 import { Button } from '@/components/ui/button'
@@ -26,7 +26,7 @@ const itemVariants = {
 		y: 0,
 		transition: {
 			duration: 0.5,
-			ease: 'easeOut'
+			ease: easeOut
 		}
 	}
 }
