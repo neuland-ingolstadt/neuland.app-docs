@@ -43,9 +43,9 @@ export function Footer() {
 									href="https://github.com/neuland-ingolstadt"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<Github className="h-4 w-4" />
+									<Github className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									GitHub
 								</a>
 							</li>
@@ -54,9 +54,9 @@ export function Footer() {
 									href="https://www.linkedin.com/company/neuland-ingolstadt/"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<Linkedin className="h-4 w-4" />
+									<Linkedin className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									LinkedIn
 								</a>
 							</li>
@@ -65,9 +65,9 @@ export function Footer() {
 									href="https://neuland-ingolstadt.de"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<ExternalLink className="h-4 w-4" />
+									<ExternalLink className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									{t('footer.sections.links.website')}
 								</a>
 							</li>
@@ -82,18 +82,18 @@ export function Footer() {
 							<li>
 								<a
 									href="/legal/imprint"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<ScrollText className="h-4 w-4" />
+									<ScrollText className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									{t('footer.sections.contact.imprint')}
 								</a>
 							</li>
 							<li>
 								<a
 									href="/legal/privacy"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<ShieldCheck className="h-4 w-4" />
+									<ShieldCheck className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									{t('footer.sections.contact.privacy')} App
 								</a>
 							</li>
@@ -102,9 +102,9 @@ export function Footer() {
 									href="https://neuland-ingolstadt.de/legal/datenschutz"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
+									className="group text-sm text-muted-foreground hover:text-foreground flex items-center gap-2"
 								>
-									<ShieldIcon className="h-4 w-4" />
+									<ShieldIcon className="h-4 w-4 transition-transform duration-200 group-hover:-translate-y-1 group-hover:scale-110" />
 									{t('footer.sections.contact.privacy')} Website
 								</a>
 							</li>
