@@ -117,7 +117,20 @@ export function Footer() {
 						<p>{t('footer.copyright.text')}</p>
 						<p>{t('footer.copyright.rights')}</p>
 						<p className="text-xs text-muted-foreground/40 mt-2 font-mono">
-							Build: <span title="Git commit hash">{commitHash}</span>
+							Build:{' '}
+							{commitHash !== 'development' ? (
+								<a
+									href={`https://github.com/neuland-ingolstadt/neuland.app-docs/commit/${fullCommitHash}`}
+									target="_blank"
+									rel="noopener noreferrer"
+									className="hover:text-primary transition-colors duration-200 underline decoration-dotted underline-offset-2"
+									title="View commit on GitHub"
+								>
+									{commitHash}
+								</a>
+							) : (
+								<span title="Development build">{commitHash}</span>
+							)}
 						</p>
 					</div>
 				</div>
