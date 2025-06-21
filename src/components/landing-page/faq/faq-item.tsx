@@ -13,31 +13,24 @@ export function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
 			onClick={onToggle}
 			onMouseEnter={() => setIsHovered(true)}
 			onMouseLeave={() => setIsHovered(false)}
-			className="w-full text-left p-6 rounded-xl bg-card/60 backdrop-blur-xs border border-primary/20 relative overflow-hidden"
+			className="w-full text-left p-6 rounded-xl bg-card/60 backdrop-blur-xs border border-border relative overflow-hidden hover:border-border/50 transition-colors duration-300"
 			type="button"
 		>
-			{/* Gradient overlay on hover */}
 			<motion.div
 				className="absolute inset-0 bg-gradient-to-r from-primary/5 to-primary/10"
 				initial={{ opacity: 0 }}
 				animate={{ opacity: isHovered ? 1 : 0 }}
 				transition={{ duration: 0.3 }}
 			/>
-
-			{/* Enhanced border effect */}
 			<motion.div
-				className="absolute inset-0 rounded-xl border-2"
+				className="absolute inset-0 rounded-xl"
 				initial={{
-					borderColor: 'rgba(var(--primary), 0.2)',
-					boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)'
+					boxShadow: '0 1px 3px rgba(0, 0, 0, 0.05)'
 				}}
 				animate={{
-					borderColor: isHovered
-						? 'rgba(var(--primary), 0.4)'
-						: 'rgba(var(--primary), 0.2)',
 					boxShadow: isHovered
-						? '0 8px 25px rgba(var(--primary), 0.15)'
-						: '0 2px 8px rgba(0, 0, 0, 0.1)'
+						? '0 4px 12px rgba(0, 0, 0, 0.1)'
+						: '0 1px 3px rgba(0, 0, 0, 0.05)'
 				}}
 				transition={{ duration: 0.3 }}
 			/>
@@ -46,11 +39,11 @@ export function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
 				<div className="flex items-center justify-between gap-4">
 					<motion.h3
 						className="text-lg font-semibold"
-						initial={{ color: 'hsl(var(--foreground))' }}
+						initial={{ color: 'oklch(var(--foreground))' }}
 						animate={{
 							color: isHovered
-								? 'hsl(var(--primary))'
-								: 'hsl(var(--foreground))'
+								? 'oklch(var(--primary))'
+								: 'oklch(var(--foreground))'
 						}}
 						transition={{ duration: 0.3 }}
 					>
@@ -69,8 +62,8 @@ export function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
 								<motion.div
 									animate={{
 										color: isHovered
-											? 'hsl(var(--primary))'
-											: 'hsl(var(--muted-foreground))'
+											? 'oklch(var(--primary))'
+											: 'oklch(var(--muted-foreground))'
 									}}
 									transition={{ duration: 0.3 }}
 								>
