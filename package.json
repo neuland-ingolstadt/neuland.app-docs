@@ -19,11 +19,11 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "framer-motion": "^12.18.1",
-    "lucide-react": "^0.518.0",
+    "lucide-react": "0.522.0",
     "next": "15.3.4",
     "next-intl": "^4.1.0",
-    "nextra": "4.3.0-alpha.23",
-    "nextra-theme-docs": "4.3.0-alpha.23",
+    "nextra": "4.3.0-alpha.24",
+    "nextra-theme-docs": "4.3.0-alpha.24",
     "react": "^19.1.0",
     "react-confetti-boom": "^2.0.1",
     "react-dom": "^19.1.0",
@@ -31,7 +31,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
-    "@biomejs/biome": "2.0.0-beta.5",
+    "@biomejs/biome": "2.0.4",
     "@tailwindcss/postcss": "^4.1.10",
     "@types/node": "^20.19.1",
     "@types/react": "^19.1.8",
@@ -42,6 +42,6 @@
     "typescript": "^5.8.3"
   },
   "patchedDependencies": {
-    "nextra-theme-docs@4.3.0-alpha.23": "patches/nextra-theme-docs@4.3.0-alpha.22.patch"
+    "nextra-theme-docs@4.3.0-alpha.24": "patches/nextra-theme-docs@4.3.0-alpha.22.patch"
   }
 }

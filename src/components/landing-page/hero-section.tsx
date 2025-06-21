@@ -177,7 +177,7 @@ export function HeroSection() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 1, duration: 0.6 }}
-							className="flex flex-wrap gap-4 mb-12 text-sm"
+							className="flex flex-wrap gap-4 mb-12 text-sm relative z-20"
 						>
 							{[
 								{ icon: Calendar, text: t('hero.features.schedule') },
@@ -190,8 +190,7 @@ export function HeroSection() {
 									initial={{ opacity: 0, scale: 0.9 }}
 									animate={{ opacity: 1, scale: 1 }}
 									transition={{ delay: 1.2 + index * 0.1, duration: 0.4 }}
-									whileHover={{ scale: 1.05 }}
-									className="flex items-center gap-2 px-4 py-2.5 bg-white/5 backdrop-blur-xs rounded-full border border-white/10"
+									className="flex items-center gap-2 px-4 py-2.5 bg-white/5 backdrop-blur-xs rounded-full border border-white/10 hover:shadow-[0_4px_12px_rgba(59,130,246,0.3)] transition-shadow duration-200 relative z-10"
 								>
 									<item.icon className="h-4 w-4 text-gray-400" />
 									<span className="text-gray-300">{item.text}</span>
@@ -209,7 +208,7 @@ export function HeroSection() {
 								<Button
 									asChild
 									size="lg"
-									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white border-0 hover:scale-105 active:scale-95 cursor-pointer"
+									className="px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-blue-600 hover:bg-blue-700 text-white border-0 active:scale-95 cursor-pointer"
 								>
 									<a
 										href="https://neuland.app/get"
@@ -223,7 +222,7 @@ export function HeroSection() {
 								<Button
 									asChild
 									size="lg"
-									className="relative z-10 px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20 hover:scale-105 active:scale-95 cursor-pointer pointer-events-auto"
+									className="relative z-10 px-8 py-6 text-lg font-semibold shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 bg-white/10 hover:bg-white/20 text-white border border-white/20  active:scale-95 cursor-pointer pointer-events-auto"
 								>
 									<a
 										href="https://web.neuland.app"
@@ -398,7 +397,7 @@ export function HeroSection() {
 									repeat: Infinity,
 									ease: 'easeInOut'
 								}}
-								className="relative w-32 h-32 rounded-2xl bg-black/20 backdrop-blur-xs border border-white/5 shadow-xl flex items-center justify-center"
+								className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-2xl bg-black/20 backdrop-blur-xs border border-white/5 shadow-xl flex items-center justify-center z-[9999]"
 							>
 								<NeulandLogo
 									className="w-20 h-20 object-contain"
