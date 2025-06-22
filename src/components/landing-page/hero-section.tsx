@@ -177,7 +177,7 @@ export function HeroSection() {
 							initial={{ opacity: 0, y: 20 }}
 							animate={{ opacity: 1, y: 0 }}
 							transition={{ delay: 1, duration: 0.6 }}
-							className="flex flex-wrap gap-4 mb-12 text-sm relative z-20"
+							className="flex flex-wrap gap-4 mb-12 text-sm relative "
 						>
 							{[
 								{ icon: Calendar, text: t('hero.features.schedule') },
@@ -190,7 +190,7 @@ export function HeroSection() {
 									initial={{ opacity: 0, scale: 0.9 }}
 									animate={{ opacity: 1, scale: 1 }}
 									transition={{ delay: 1.2 + index * 0.1, duration: 0.4 }}
-									className="flex items-center gap-2 px-4 py-2.5 bg-white/5 backdrop-blur-xs rounded-full border border-white/10 hover:shadow-[0_4px_12px_rgba(59,130,246,0.3)] transition-shadow duration-200 relative z-10"
+									className="flex items-center gap-2 px-4 py-2.5 bg-white/5 backdrop-blur-xs rounded-full border border-white/10 hover:shadow-[0_4px_12px_rgba(59,130,246,0.3)] transition-shadow duration-200 relative "
 								>
 									<item.icon className="h-4 w-4 text-gray-400" />
 									<span className="text-gray-300">{item.text}</span>
