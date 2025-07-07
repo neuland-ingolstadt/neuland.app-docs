@@ -63,7 +63,9 @@ const RootLayout: FC<LayoutProps> = async ({ children, params }) => {
 
 	return (
 		<html lang="de" dir="ltr" suppressHydrationWarning>
-			<Head />
+			<Head>
+				<link rel="me" href="https://social.tchncs.de/@neuland" />
+			</Head>
 			<body>
 				<Layout
 					sidebar={{
