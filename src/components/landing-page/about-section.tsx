@@ -189,19 +189,43 @@ export function AboutSection() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ delay: 0.5, duration: 0.6 }}
-					className="mt-16 flex flex-col  gap-8"
+					className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start justify-start max-w-4xl"
 				>
-					<Badge variant="secondary" className="group">
-						<Code className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-						{t('about.poweredBy')}
-					</Badge>
-					<Link
-						className="inline-block w-64 text-foreground"
-						href="https://neuland-ingolstadt.de"
-						target="_blank"
-					>
-						<NeulandLabel color="currentColor" className="w-full h-auto" />
-					</Link>
+					<div className="flex flex-col items-start gap-4 ">
+						<Badge variant="secondary" className="group">
+							<Code className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+							{t('about.developedBy')}
+						</Badge>
+						<Link
+							className="inline-block w-64 text-foreground hover:opacity-80 transition-opacity"
+							href="https://neuland-ingolstadt.de"
+							target="_blank"
+						>
+							<NeulandLabel color="currentColor" className="w-full h-auto" />
+						</Link>
+					</div>
+
+					<div className="flex flex-col items-start gap-4">
+						<Badge variant="secondary" className="group">
+							<Coffee className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+							{t('about.infrastructureBy')}
+						</Badge>
+						<div className="h-16 flex items-center">
+							<Link
+								className="inline-block text-foreground hover:opacity-80 transition-opacity "
+								href="https://hetzner.com"
+								target="_blank"
+							>
+								<Image
+									src="/assets/Hetzner.webp"
+									alt="Hetzner"
+									width={300}
+									height={100}
+									className="-ml-6 mt-6"
+								/>
+							</Link>
+						</div>
+					</div>
 				</motion.div>
 			</div>
 		</section>
