@@ -6,6 +6,7 @@ import Link from 'next/link'
 import NeulandLabel from '@/components/icons/neuland'
 import { Badge } from '@/components/ui/badge'
 import { useTranslation } from '@/lib/useTranslations'
+import HetznerLogo from '../icons/hetzner-logo'
 
 export function AboutSection() {
 	const { t } = useTranslation()
@@ -216,12 +217,10 @@ export function AboutSection() {
 								href="https://hetzner.com"
 								target="_blank"
 							>
-								<Image
-									src="/assets/Hetzner.webp"
-									alt="Hetzner"
-									width={300}
-									height={100}
-									className="-ml-6 mt-6"
+								<HetznerLogo
+									width={227}
+									height={87}
+									className="w-full h-auto -ml-4 mt-4"
 								/>
 							</Link>
 						</div>
