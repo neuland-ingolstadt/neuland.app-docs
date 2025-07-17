@@ -60,6 +60,9 @@ Yes! Most features of Neuland Next are designed to work offline after the initia
 
 As an open-source project, we aim to support as many platforms as possible. However, our app depends on sensitive credentials and the official API of THI, which aren't compatible with F-Droid's strict security and build policies. Therefore, distributing the app through F-Droid isn't currently feasible.
 
+However, we do provide the app as a `.apk` file on our [GitHub Releases page](https://github.com/neuland-ingolstadt/neuland.app-native/releases).
+You can also download it via the [Aurora Store](https://auroraoss.com/), an open-source alternative to the Google Play Store that allows you to download apps without a Google account.
+
 ## Open Source & Contribution
 
 ### Can I check the source code?

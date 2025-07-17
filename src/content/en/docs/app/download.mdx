@@ -4,12 +4,15 @@ import { Callout } from 'nextra/components'
 
 Neuland Next is availabe for all common platforms. You can download the app from the App Store or Google Play Store.
 
-<div class="flex gap-2 mt-4">
+<div className="flex gap-2 mt-4">
       <a href="https://apps.apple.com/app/apple-store/id1617096811?pt=124486931&ct=web&mt=8">
-        <img alt="Download on the App Store" src="/assets/Apple_Badge_EN.svg"  class="h-12 w-auto" />
+        <img alt="Download on the App Store" src="/assets/Apple_Badge_EN.svg"  className="h-12 w-auto" />
       </a>
       <a href="https://play.google.com/store/apps/details?id=app.neuland">
-        <img alt="Get it on Google Play" src="/assets/Google_Badge_EN.svg" class="h-12 w-auto" />
+        <img alt="Get it on Google Play" src="/assets/Google_Badge_EN.svg" className="h-12 w-auto" />
+      </a>
+      <a href="https://github.com/neuland-ingolstadt/neuland.app-native/releases">
+        <img alt="Get it on GitHub" src="/assets/get-it-on-github.png" className="h-12 w-auto" />
       </a>
 </div>
 
@@ -26,14 +29,22 @@ The minimum required iOS version is 15.1.
 
 ## Android
 
-The app is available for Android phones and tablets. You can download the app from the Google Play Store.
-
+The app is available for Android phones and tablets. You can download it either from the Play Store or directly from source. 
 
 The minimum required Android version is 7.0.
 
-<Callout>
-Unfortunately, we can't offer an F-Droid version because our app relies on the official THI API. However, you can easily install it via an alternative store like Aurora Store.
-</Callout> 
+### Play Store
+
+You can download the latest version of the app directly from the Google Play Store using the button above.
+
+Alternatively, you can use [Aurora Store](https://auroraoss.com/), an open-source alternative to the Google Play Store that allows you to download apps without a Google account. Just search for `Neuland Next` in the Aurora Store and install it.
+
+### GitHub Releases
+
+The app is also available as a universal `.apk` file on the [GitHub Releases page](https://github.com/neuland-ingolstadt/neuland.app-native/releases). This option offers maximum flexibility and transparency, allowing you to install the app on any Android device without relying on the Play Store.
+
+To automate update installation, you can use a third-party app like [Obtainium](https://github.com/ImranR98/Obtainium), which automatically fetches updates from GitHub Releases. Simply add the repository link:  
+`https://github.com/neuland-ingolstadt/neuland.app-native`.
 
 ## MacOS
 
