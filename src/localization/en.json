@@ -103,6 +103,8 @@
 		"stats": {
 			"started": "started"
 		},
+		"developedBy": "Developed by",
+		"infrastructureBy": "Infrastructure by",
 		"poweredBy": "Powered by"
 	},
 	"testimonials": {
@@ -143,7 +145,7 @@
 		"questions": [
 			{
 				"question": "Is it secure to use Neuland Next?",
-				"answer": "Of course! Neuland Next is built with the latest technologies and follows best practices for security and data protection. The app has official access to THI’s API and communicates directly with it. All data provided by THI is processed exclusively on your device – it never leaves your device or gets shared with third parties. We do not store any personal data on our servers."
+				"answer": "Of course! Neuland Next is built with the latest technologies and follows best practices for security and data protection. The app has official access to THI's API and communicates directly with it. All data provided by THI is processed exclusively on your device – it never leaves your device or gets shared with third parties. We do not store any personal data on our servers."
 			},
 			{
 				"question": "What happens to my login credentials?",
