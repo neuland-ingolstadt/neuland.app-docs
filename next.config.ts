@@ -13,6 +13,9 @@ export default (withNextra({
     locales: ['de', 'en'],
     defaultLocale: 'en'
   },
+  experimental: {
+    webpackMemoryOptimizations: true
+  },
   output: 'standalone',
   images: {
     remotePatterns: [
