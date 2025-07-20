@@ -14,7 +14,7 @@ export default (withNextra({
     defaultLocale: 'en'
   },
   experimental: {
-    webpackMemoryOptimizations: true
+    webpackMemoryOptimizations: false,
   },
   output: 'standalone',
   images: {
