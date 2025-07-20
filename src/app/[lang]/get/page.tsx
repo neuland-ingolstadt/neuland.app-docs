@@ -141,6 +141,7 @@ export default function DownloadPage() {
 								alt="Neuland Next Dashboard"
 								width={800}
 								height={1600}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>
@@ -158,6 +159,7 @@ export default function DownloadPage() {
 								alt="Calendar View"
 								width={600}
 								height={1200}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>
@@ -175,6 +177,7 @@ export default function DownloadPage() {
 								alt="Campus Map"
 								width={600}
 								height={1200}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>

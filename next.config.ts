@@ -13,9 +13,6 @@ export default (withNextra({
     locales: ['de', 'en'],
     defaultLocale: 'en'
   },
-  experimental: {
-    webpackMemoryOptimizations: false,
-  },
   output: 'standalone',
   images: {
     remotePatterns: [
@@ -23,6 +20,12 @@ export default (withNextra({
         protocol: 'https',
         hostname: 'github.com'
       }
-    ]
+    ],
+    formats: ['image/webp', 'image/avif'],
+    minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
+  },
+  experimental: {
+    optimizePackageImports: ['framer-motion', 'lucide-react'],
+    webpackMemoryOptimizations: true,
   }
 }))

@@ -425,6 +425,7 @@ export function HeroSection() {
 								alt="Neuland Next Dashboard"
 								width={800}
 								height={1600}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>
@@ -441,6 +442,7 @@ export function HeroSection() {
 								alt="Calendar View"
 								width={600}
 								height={1200}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>
@@ -457,6 +459,7 @@ export function HeroSection() {
 								alt="Campus Map"
 								width={600}
 								height={1200}
+								priority
 								className="w-full rounded-4xl object-cover"
 							/>
 						</motion.div>
