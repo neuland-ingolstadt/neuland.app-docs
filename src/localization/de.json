@@ -102,6 +102,8 @@
 		"stats": {
 			"started": "gestartet"
 		},
+		"developedBy": "Entwickelt von",
+		"infrastructureBy": "Infrastruktur von",
 		"poweredBy": "Powered by"
 	},
 	"testimonials": {
