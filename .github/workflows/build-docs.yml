@@ -34,6 +34,7 @@ jobs:
           tags: |
             type=raw,value=build-${{ github.run_number }}
             type=raw,value=latest
+            type=raw,value=${{ github.ref_name }}
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
