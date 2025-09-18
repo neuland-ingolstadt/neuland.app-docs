@@ -14,8 +14,7 @@ E-Mail: info@neuland-ingolstadt.de
 
 Die Technische Hochschule Ingolstadt (THI), Esplanade 10, 85049 Ingolstadt stellt Bewerbern und zugelassenen Studierenden einen Zugang zum PRIMUSS-Bewerber- und PRIMUSS-Studierendenportal zur Verfügung.
 
-Neuland Ingolstadt e.V. stellt Nutzern die "Neuland Next" zur Verfügung, die sowohl als Web-App als auch als native App für iOS und Android verfügbar ist.
-Alle Anwendungen werden im Folgenden unter dem Oberbegriff "Neuland App" zusammengefasst.
+Neuland Ingolstadt e.V. stellt Nutzern die "Neuland Next" zur Verfügung, die sowohl als Web-App als auch als native App für iOS und Android verfügbar ist. Alle Varianten werden im Folgenden unter dem Oberbegriff "Neuland App" zusammengefasst.
 
 Die Neuland App bietet Studierenden eine sichere, mobile Ansicht tätigkeitsbezogener Daten aus
 
@@ -46,8 +45,7 @@ Zur Authentifizierung dienen E-Mail-Adresse und Passwort des Nutzers, die im sic
 Die Daten umfassen E-Mail-Adresse, Kennwort und Session ID. Eine Weitergabe an Dritte findet nicht statt.
 Eine Drittstaatübermittlung findet nicht statt.
 
-Die Rechtsgrundlage ist Art 6 Abs 1 Zif f DSGVO.
-Das berechtigte Interesse liegt darin dem Betroffenen die wiederholte Eingabe der Zugangsdaten zu ersparen.
+Die Rechtsgrundlage ist Art 6 Abs 1 Zif f DSGVO. Das berechtigte Interesse liegt darin dem Betroffenen die wiederholte Eingabe der Zugangsdaten zu ersparen.
 
 Die Speicherung der Zugangsdaten ist zeitlich unbegrenzt.
 Von der App zwischengespeicherte Zugangsdaten können jederzeit entweder durch das Abmelden oder das Schließen der App und Löschen der Website- /Appdaten gelöscht werden.
@@ -66,7 +64,7 @@ Nutzer können ihr Widerrufsrecht durch formlose Nachricht und Angabe der eigene
 
 ## Analytics
 
-Um die Weiterentwicklung der App zu unterstützen, werden folgende nicht-personenbezogene Daten verarbeitet:
+Um die Weiterentwicklung der App zu unterstützen, werden insbesondere die folgenden nicht-personenbezogenen Daten verarbeitet:
 
 **Nutzungsverhalten**
 
@@ -78,8 +76,8 @@ Um die Weiterentwicklung der App zu unterstützen, werden folgende nicht-persone
 
 **Technische Informationen (je Ereignis):**
 
-- Version der verwendeten Neuland App und des Betriebs-systems des Nutzers.
-- Grober Standort (Bundesland): Ermittlung des ungefähren Standorts des Nutzers auf Bundes-landebene anhand der IP-Adresse. Die IP-Adresse selbst wird nicht gespeichert.
+- Version der verwendeten Neuland App und des Betriebssystems des Nutzers.
+- Grober Standort (Bundesland): Ermittlung des ungefähren Standorts des Nutzers auf Bundeslandebene anhand der IP-Adresse. Die IP-Adresse selbst wird nicht gespeichert.
 - Datum und Uhrzeit des Ereignisses (z.B. Seitenaufruf, Funktionsnutzung).
 
 Diese Angaben sind aus Transparenzgründen angegeben.
@@ -97,4 +95,4 @@ Die für uns zuständige Behörde erreichen Sie im Internet unter lda.bayern.de,
 ## Stand
 
 Erste Version: 24.2.2023\
-Letzte Aktualisierung 24.7.2024
+Letzte Aktualisierung 18.9.2025

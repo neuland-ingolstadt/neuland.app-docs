@@ -64,7 +64,7 @@ Nutzer können ihr Widerrufsrecht durch formlose Nachricht und Angabe der eigene
 
 ## Analytics
 
-Um die Weiterentwicklung der App zu unterstützen, werden folgende nicht-personenbezogene Daten verarbeitet:
+Um die Weiterentwicklung der App zu unterstützen, werden insbesondere die folgenden nicht-personenbezogenen Daten verarbeitet:
 
 **Nutzungsverhalten**
 
@@ -76,8 +76,8 @@ Um die Weiterentwicklung der App zu unterstützen, werden folgende nicht-persone
 
 **Technische Informationen (je Ereignis):**
 
-- Version der verwendeten Neuland App und des Betriebs-systems des Nutzers.
-- Grober Standort (Bundesland): Ermittlung des ungefähren Standorts des Nutzers auf Bundes-landebene anhand der IP-Adresse. Die IP-Adresse selbst wird nicht gespeichert.
+- Version der verwendeten Neuland App und des Betriebssystems des Nutzers.
+- Grober Standort (Bundesland): Ermittlung des ungefähren Standorts des Nutzers auf Bundeslandebene anhand der IP-Adresse. Die IP-Adresse selbst wird nicht gespeichert.
 - Datum und Uhrzeit des Ereignisses (z.B. Seitenaufruf, Funktionsnutzung).
 
 Diese Angaben sind aus Transparenzgründen angegeben.
@@ -95,4 +95,4 @@ Die für uns zuständige Behörde erreichen Sie im Internet unter lda.bayern.de,
 ## Stand
 
 Erste Version: 24.2.2023\
-Letzte Aktualisierung 19.6.2025
+Letzte Aktualisierung 18.9.2025
