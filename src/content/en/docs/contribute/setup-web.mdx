@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components'
 
 <Callout type="warning">
 The following section describes the lightweight setup process for the web app, which allows faster development and testing.
-For native features and not web related bug fixes, refer to the [full setup guide](/en/app/setup), which includes the setup of the mobile app environment.
+For native features and not web related bug fixes, refer to the [full setup guide](/en/docs/contribute/setup), which includes the setup of the mobile app environment.
 </Callout>
 
 ## Prerequisites
@@ -29,11 +29,10 @@ For native features and not web related bug fixes, refer to the [full setup guid
 
 6.  Copy the `.env.local.example` file to `.env.local` and fill in the variables.
     \
-    See the [notes](/app/contribute#developer) on the API key.
+    See the [notes](/en/docs/contribute/contribute#developers) on the API key.
 
-```env
-EXPO_PUBLIC_THI_API_KEY=abc123  // [!code --]
-EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
+```env filename=".env.local"
+EXPO_PUBLIC_THI_API_KEY=abc123
 ```
 
 ## Development
@@ -48,5 +47,9 @@ EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
 
 <Callout type="info">
 Detailed information about contributing to the project and the code style can be found in the
-[full setup guide](/en/app/setup#submitting-changes).
+[full setup guide](/en/docs/contribute/setup#submitting-changes).
+</Callout>
+
+<Callout type="important">
+Due to the CORS rules of the THI API, which do not allow localhost, you need to use a proxy or a browser extension to use the API in the browser.
 </Callout>

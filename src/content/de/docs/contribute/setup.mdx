@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components'
 
 <Callout type="info">
 Diese Anleitung beschreibt den Einrichtungsprozess für die native App-Entwicklungsumgebung, da dies der Hauptfokus des Projekts ist.
-Zum Testen oder zum Beheben von Fehlern in der Web-App empfehlen wir die Verwendung der leichtgewichtigeren [Web-Entwicklungsumgebung](/de/app/setup-web).
+Zum Testen oder zum Beheben von Fehlern in der Web-App empfehlen wir die Verwendung der leichtgewichtigeren [Web-Entwicklungsumgebung](/docs/contribute/setup-web).
 </Callout>
 
 ## Voraussetzungen
@@ -42,11 +42,10 @@ Zum Testen oder zum Beheben von Fehlern in der Web-App empfehlen wir die Verwend
 
 7. Kopiere die `.env.local.example` Datei in `.env.local` und fülle die Variablen aus.
    \
-   Siehe die [Hinweise](/app/contribute#entwickler) zum API-Schlüssel.
+   Siehe die [Hinweise](/docs/contribute/contribute#entwickler) zum API-Schlüssel.
 
-```env
-EXPO_PUBLIC_THI_API_KEY=abc123  // [!code --]
-EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
+```env filename=".env.local"
+EXPO_PUBLIC_THI_API_KEY=abc123
 ```
 
 8. Erstelle einen Entwicklungsbuild für deine gewünschte Plattform.

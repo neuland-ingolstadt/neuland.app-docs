@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components'
 
 <Callout type="warning">
 Die folgende Sektion beschreibt den leichtgewichtigen Einrichtungsprozess für die Web-App, der eine schnellere Entwicklung und Tests ermöglicht.
-Für native Funktionen und nicht webbezogene Fehlerbehebungen, siehe den [vollständigen Einrichtungsleitfaden](/app/setup), der die Einrichtung der mobilen App-Umgebung beinhaltet.
+Für native Funktionen und nicht webbezogene Fehlerbehebungen, siehe den [vollständigen Einrichtungsleitfaden](/docs/contribute/setup), der die Einrichtung der mobilen App-Umgebung beinhaltet.
 </Callout>
 
 ## Voraussetzungen
@@ -31,11 +31,10 @@ Für native Funktionen und nicht webbezogene Fehlerbehebungen, siehe den [vollst
 
 6. Kopiere die `.env.local.example` Datei in `.env.local` und fülle die Variablen aus.
    \
-   Siehe die [Hinweise](/app/contribute#entwickler) zum API-Schlüssel.
+   Siehe die [Hinweise](/docs/contribute/contribute#entwickler) zum API-Schlüssel.
 
-```env
-EXPO_PUBLIC_THI_API_KEY=abc123  // [!code --]
-EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
+```env filename=".env.local"
+EXPO_PUBLIC_THI_API_KEY=abc123
 ```
 
 ## Entwicklung
@@ -50,5 +49,9 @@ EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
 
 <Callout type="info">
 Detailierte Informationen zum Beitragen am Projekt und zum Code-Stil findest du im
-[vollständigen Einrichtungsleitfaden](/app/setup#anderungen-commiten).
+[vollständigen Einrichtungsleitfaden](/docs/contribute/setup#anderungen-commiten).
+</Callout>
+
+<Callout type="important">
+Aufgrund der CORS Regeln der THI API, welche localhost nicht erlauben, musst du einen Proxy oder eine Browser-Erweiterung verwenden, um die API im Browser zu verwenden.
 </Callout>

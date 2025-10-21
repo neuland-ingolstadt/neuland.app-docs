@@ -4,7 +4,7 @@ import { Callout } from 'nextra/components'
 
 <Callout type="info">
 The following section describes the setup process for the native app development environment, as it is the main focus of the project.
-For testing purposes or web-only bug fixing, we recommend using the more lightweight [web development environment](/en/app/setup-web).
+For testing purposes or web-only bug fixing, we recommend using the more lightweight [web development environment](/en/docs/contribute/setup-web).
 </Callout>
 
 ## Prerequisites
@@ -42,11 +42,10 @@ For testing purposes or web-only bug fixing, we recommend using the more lightwe
 
 7.  Copy the `.env.local.example` file to `.env.local` and fill in the variables.
     \
-    See the [notes](/app/contribute#developer) on the API key.
+    See the [notes](/en/docs/contribute/contribute#developers) on the API key.
 
-```env
-EXPO_PUBLIC_THI_API_KEY=abc123  // [!code --]
-EXPO_PUBLIC_THI_API_KEY=SUPER_SECRET_API_KEY  // [!code ++]
+```env filename=".env.local"
+EXPO_PUBLIC_THI_API_KEY=abc123
 ```
 
 8.  Create a development build for your desired platform.
