@@ -1,7 +1,7 @@
 {
 	"hero": {
 		"title": "Neuland Next",
-		"subtitle": "Your unofficial app for THI",
+		"subtitle": "Your app for THI",
 		"by": "by Neuland Ingolstadt e.V.",
 		"features": {
 			"schedule": "Schedule",
@@ -230,7 +230,7 @@
 		}
 	},
 	"footer": {
-		"description": "The unofficial app for THI, developed by students for students. Open Source and community-driven.",
+		"description": "Neuland Next is an independent by Neuland Ingolstadt e.V. - The app is not affiliated with the university, but is used by many students and staff.",
 		"sections": {
 			"links": {
 				"title": "Links",

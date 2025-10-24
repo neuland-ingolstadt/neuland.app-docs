@@ -28,7 +28,7 @@ export function Footer() {
 								Neuland Next
 							</span>
 						</div>
-						<p className="text-muted-foreground max-w-md">
+						<p className="text-muted-foreground max-w-md text-sm">
 							{t('footer.description')}
 						</p>
 					</div>

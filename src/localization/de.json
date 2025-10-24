@@ -1,7 +1,7 @@
 {
 	"hero": {
 		"title": "Neuland Next",
-		"subtitle": "Deine inoffizielle App für die THI",
+		"subtitle": "Deine App für die THI",
 		"by": "von Neuland Ingolstadt e.V.",
 		"features": {
 			"schedule": "Stundenplan",
@@ -229,7 +229,7 @@
 		}
 	},
 	"footer": {
-		"description": "Die inoffizielle App für die THI, entwickelt von Studierenden für Studierende. Open Source und Community-getrieben.",
+		"description": "Neuland Next ist ein unabhängiges Projekt von Neuland Ingolstadt e.V. - Die App steht in keiner offiziellen Verbindung zur Hochschule, wird jedoch von vielen Studierenden und Mitarbeitenden genutzt.",
 		"sections": {
 			"links": {
 				"title": "Links",
