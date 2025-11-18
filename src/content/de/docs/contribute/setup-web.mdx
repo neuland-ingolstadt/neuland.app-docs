@@ -13,8 +13,7 @@ Für native Funktionen und nicht webbezogene Fehlerbehebungen, siehe den [vollst
 2. Installiere die erforderliche Software:
 
    - [Visual Studio Code](https://code.visualstudio.com/)
-   - [Xcode](https://apps.apple.com/us/app/xcode/id497799835?mt=12) (für iOS-Entwicklung, nur macOS)
-   - [Android Studio](https://developer.android.com/studio) (für Android-Entwicklung)
+   - [Docker Desktop](https://www.docker.com/get-started/) (optional, für CORS-Proxy)
 
 3. Installiere die benötigten Abhängigkeiten:
 
@@ -55,3 +54,60 @@ Detailierte Informationen zum Beitragen am Projekt und zum Code-Stil findest du 
 <Callout type="important">
 Aufgrund der CORS Regeln der THI API, welche localhost nicht erlauben, musst du einen Proxy oder eine Browser-Erweiterung verwenden, um die API im Browser zu verwenden.
 </Callout>
+
+## CORS-Proxy einrichten
+
+Um die THI API während der lokalen Entwicklung nutzen zu können, wird empfohlen, den [Neuland CORS Proxy](https://github.com/neuland-ingolstadt/neuland-next-proxy) zu verwenden.
+
+<Callout type="warning">
+Der Proxy ist nur für die lokale Entwicklung gedacht und sollte **nicht** in Produktionsumgebungen verwendet werden!
+</Callout>
+
+### Mit Docker (Empfohlen)
+
+Die einfachste Methode ist die Verwendung von Docker:
+
+```sh
+docker run -p 3001:3001 ghcr.io/neuland-ingolstadt/neuland-next-proxy:latest
+```
+
+Der Proxy läuft nun auf `http://localhost:3001`.
+
+**Optional:** Verwende einen anderen Port:
+
+```sh
+docker run -p 8080:8080 -e PORT=8080 ghcr.io/neuland-ingolstadt/neuland-next-proxy:latest
+```
+
+### Manuelle Installation
+
+Alternativ kannst du den Proxy auch manuell installieren:
+
+1. Klone das Proxy-Repository:
+
+   ```sh
+   git clone https://github.com/neuland-ingolstadt/neuland-next-proxy.git
+   cd neuland-next-proxy
+   ```
+
+2. Installiere die Abhängigkeiten:
+
+   ```sh
+   pnpm install
+   ```
+
+3. Starte den Proxy-Server:
+
+   ```sh
+   pnpm dev
+   ```
+
+### Neuland Next Web konfigurieren
+
+Füge die folgende Umgebungsvariable zu deiner `.env.local` Datei hinzu:
+
+```env filename=".env.local"
+EXPO_PUBLIC_ENDPOINT_HOST=http://localhost:3001
+```
+
+Jetzt kannst du die Web-App mit `bun web` starten und die THI API wird über den Proxy aufgerufen.

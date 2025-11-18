@@ -13,6 +13,7 @@ For native features and not web related bug fixes, refer to the [full setup guid
 2.  Install the required software:
 
     - [Visual Studio Code](https://code.visualstudio.com/)
+    - [Docker Desktop](https://www.docker.com/get-started/) (optional, for CORS proxy)
 
 3.  Install the required dependencies:
 
@@ -53,3 +54,60 @@ Detailed information about contributing to the project and the code style can be
 <Callout type="important">
 Due to the CORS rules of the THI API, which do not allow localhost, you need to use a proxy or a browser extension to use the API in the browser.
 </Callout>
+
+## Setting up the CORS Proxy
+
+To use the THI API during local development, it is recommended to use the [Neuland CORS Proxy](https://github.com/neuland-ingolstadt/neuland-next-proxy).
+
+<Callout type="warning">
+The proxy is intended for local development only and should **not** be used in production environments!
+</Callout>
+
+### Using Docker (Recommended)
+
+The easiest way to run the proxy is using Docker:
+
+```sh
+docker run -p 3001:3001 ghcr.io/neuland-ingolstadt/neuland-next-proxy:latest
+```
+
+The proxy is now running on `http://localhost:3001`.
+
+**Optional:** Use a different port:
+
+```sh
+docker run -p 8080:8080 -e PORT=8080 ghcr.io/neuland-ingolstadt/neuland-next-proxy:latest
+```
+
+### Manual Installation
+
+Alternatively, you can install the proxy manually:
+
+1. Clone the proxy repository:
+
+   ```sh
+   git clone https://github.com/neuland-ingolstadt/neuland-next-proxy.git
+   cd neuland-next-proxy
+   ```
+
+2. Install the dependencies:
+
+   ```sh
+   pnpm install
+   ```
+
+3. Start the proxy server:
+
+   ```sh
+   pnpm dev
+   ```
+
+### Configuring Neuland Next Web
+
+Add the following environment variable to your `.env.local` file:
+
+```env filename=".env.local"
+EXPO_PUBLIC_ENDPOINT_HOST=http://localhost:3001
+```
+
+Now you can start the web app with `bun web` and the THI API will be accessed through the proxy.
