@@ -207,7 +207,6 @@ export function AboutSection() {
 						</Link>
 					</div>
 
-					
 					<div className="flex flex-col items-start gap-4">
 						<Badge variant="secondary" className="group">
 							<Coffee className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
@@ -219,10 +218,7 @@ export function AboutSection() {
 								href="https://thi.de"
 								target="_blank"
 							>
-							<ThiLogo
-						
-								className="w-full h-auto mt-4 currentColor"
-							/>
+								<ThiLogo className="w-full h-auto mt-6 currentColor" />
 							</Link>
 						</div>
 					</div>

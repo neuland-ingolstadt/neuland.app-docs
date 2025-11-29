@@ -26,9 +26,10 @@ export default (withNextra({
     unoptimized: false,
     loader: 'default',
   },
+      reactCompiler: true,
+
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
     webpackMemoryOptimizations: true,
-    reactCompiler: true,
   }
 }))
