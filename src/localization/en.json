@@ -105,7 +105,8 @@
 		},
 		"developedBy": "Developed by",
 		"infrastructureBy": "Infrastructure by",
-		"poweredBy": "Powered by"
+		"poweredBy": "Powered by",
+		"sponsoredBy": "Sponsored by"
 	},
 	"testimonials": {
 		"title": "What our users say",
