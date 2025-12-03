@@ -98,14 +98,15 @@
 		"tags": {
 			"openSource": "Open Source",
 			"community": "Community-driven",
-			"members": "150+ members"
+			"members": "200+ members"
 		},
 		"stats": {
 			"started": "started"
 		},
 		"developedBy": "Developed by",
 		"infrastructureBy": "Infrastructure by",
-		"poweredBy": "Powered by"
+		"poweredBy": "Powered by",
+		"sponsoredBy": "Sponsored by"
 	},
 	"testimonials": {
 		"title": "What our users say",

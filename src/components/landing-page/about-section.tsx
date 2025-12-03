@@ -7,6 +7,7 @@ import NeulandLabel from '@/components/icons/neuland'
 import { Badge } from '@/components/ui/badge'
 import { useTranslation } from '@/lib/useTranslations'
 import HetznerLogo from '../icons/hetzner-logo'
+import ThiLogo from '../icons/thi-logo'
 
 export function AboutSection() {
 	const { t } = useTranslation()
@@ -190,7 +191,7 @@ export function AboutSection() {
 					whileInView={{ opacity: 1, y: 0 }}
 					viewport={{ once: true }}
 					transition={{ delay: 0.5, duration: 0.6 }}
-					className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start justify-start max-w-4xl"
+					className="mt-16 grid grid-cols-1 lg:grid-cols-3 gap-10 items-start justify-start max-w-6xl"
 				>
 					<div className="flex flex-col items-start gap-4 ">
 						<Badge variant="secondary" className="group">
@@ -209,6 +210,21 @@ export function AboutSection() {
 					<div className="flex flex-col items-start gap-4">
 						<Badge variant="secondary" className="group">
 							<Coffee className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
+							{t('about.sponsoredBy')}
+						</Badge>
+						<div className="h-16 flex items-center">
+							<Link
+								className="inline-block text-foreground hover:opacity-80 transition-opacity "
+								href="https://thi.de"
+								target="_blank"
+							>
+								<ThiLogo className="w-full h-auto mt-6 currentColor" />
+							</Link>
+						</div>
+					</div>
+					<div className="flex flex-col items-start gap-4">
+						<Badge variant="secondary" className="group">
+							<Coffee className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
 							{t('about.infrastructureBy')}
 						</Badge>
 						<div className="h-16 flex items-center">
@@ -220,7 +236,7 @@ export function AboutSection() {
 								<HetznerLogo
 									width={227}
 									height={87}
-									className="w-full h-auto -ml-4 mt-4"
+									className="w-full h-auto -ml-6 mt-6"
 								/>
 							</Link>
 						</div>
