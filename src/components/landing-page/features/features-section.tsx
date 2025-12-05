@@ -1,11 +1,19 @@
 'use client'
 import { AnimatePresence, easeIn, easeOut, motion } from 'framer-motion'
 import { ChevronRight, Sparkles } from 'lucide-react'
+import dynamic from 'next/dynamic'
 import { Button } from '@/components/ui/button'
 import { useTranslation } from '@/lib/useTranslations'
 import { SectionHeader } from '../section-header'
 import { useFeatures } from './feature-data'
-import { FeatureImageCard } from './feature-image-card'
+
+const FeatureImageCard = dynamic(
+	() =>
+		import('./feature-image-card').then((mod) => ({
+			default: mod.FeatureImageCard
+		})),
+	{ ssr: false }
+)
 
 const containerVariants = {
 	hidden: { opacity: 0 },
