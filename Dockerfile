@@ -20,7 +20,7 @@ RUN realpath .
 ARG COMMIT_HASH
 ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH}
 
-RUN npm run build
+RUN npm run build --webpack
 
 # Production image, copy all the files and run next
 FROM node:24-alpine AS runner
