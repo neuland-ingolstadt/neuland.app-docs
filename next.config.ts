@@ -23,14 +23,17 @@ export default (withNextra({
     ],
     formats: ['image/webp', 'image/avif'],
     minimumCacheTTL: 60 * 60 * 24 * 30, // 30 days
-    unoptimized: false,
+    // Use the raw assets instead of the Next.js image optimizer to avoid runtime breakage
+    // (e.g., when proxies/CDNs don't forward _next/image correctly).
+    unoptimized: true,
     loader: 'default',
   },
   // React Compiler currently breaks the landing page during SSR in production; keep it off.
   reactCompiler: false,
 
   experimental: {
-    optimizePackageImports: ['framer-motion', 'lucide-react'],
+    // Turbopack's package import optimizer has produced broken bundles in prod; disable to keep chunks stable.
+    optimizePackageImports: [],
     webpackMemoryOptimizations: true,
   }
 }))
