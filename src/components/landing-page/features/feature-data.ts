@@ -1,3 +1,4 @@
+'use client'
 import { Calendar, MapPin, Users, Utensils } from 'lucide-react'
 import { useTranslation } from '@/lib/useTranslations'
 import { type Feature, FeatureType } from './types'

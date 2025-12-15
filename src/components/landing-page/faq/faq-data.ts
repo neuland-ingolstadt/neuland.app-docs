@@ -1,3 +1,4 @@
+'use client'
 import { useTranslation } from '@/lib/useTranslations'
 import type { FAQ } from './types'
 
