@@ -26,7 +26,8 @@ export default (withNextra({
     unoptimized: false,
     loader: 'default',
   },
-      reactCompiler: true,
+  // React Compiler currently breaks the landing page during SSR in production; keep it off.
+  reactCompiler: false,
 
   experimental: {
     optimizePackageImports: ['framer-motion', 'lucide-react'],
