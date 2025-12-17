@@ -10,7 +10,7 @@ Stelle sicher, dass du die neueste Version der App verwendest.
 
 ## Statusseite der App
 
-Bitte überprüfe unsere [Statusseite](https://status.neuland.app), um zu sehen, ob es laufende Probleme mit der App, der API oder den Backend-Services gibt.
+Bitte überprüfe unsere [Statusseite](https://status.neuland.app/status/app), um zu sehen, ob es laufende Probleme mit der App, der API oder den Backend-Services gibt.
 Bekannte Probleme werden auf der Statusseite aufgeführt, zusammen mit Updates zum Fortschritt bei der Behebung.
 
 ## Melde das Problem

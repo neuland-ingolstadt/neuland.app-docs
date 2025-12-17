@@ -32,7 +32,6 @@ export default (withNextra({
   reactCompiler: false,
 
   experimental: {
-    // Turbopack's package import optimizer has produced broken bundles in prod; disable to keep chunks stable.
     optimizePackageImports: [],
     webpackMemoryOptimizations: true,
   }
