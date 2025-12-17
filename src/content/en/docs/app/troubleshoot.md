@@ -8,7 +8,7 @@ Make sure you are using the latest version of the app. Check the App Store or Go
 
 ## App Status Page
 
-Please check our [status page](https://status.neuland.app/status/app) to see if there are any ongoing issues with the app, the API or the backend services.
+Please check our [status page](https://status.neuland.ing) to see if there are any ongoing issues with the app, the API or the backend services.
 Any known issues will be listed on the status page along with updates on the progress of resolving them.
 
 ## Report the Issue

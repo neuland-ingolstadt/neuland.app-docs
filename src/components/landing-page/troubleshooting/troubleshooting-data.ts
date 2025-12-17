@@ -44,7 +44,7 @@ export function useTroubleshootingCards() {
 			description: t('troubleshooting.cards.status.description'),
 			gradient: 'from-orange-500/20 to-red-500/20',
 			delay: 0.5,
-			link: 'https://status.neuland.app/status/app',
+			link: 'https://status.neuland.ing',
 			animationDirection: 'left',
 			hoverRotation: -5
 		}
