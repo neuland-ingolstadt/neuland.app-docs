@@ -53,7 +53,7 @@ export function useContributingButtons() {
 
 	const buttons: ContributingButton[] = [
 		{
-			href: '/docs/contribute',
+			href: '/docs/contribute/contribute',
 			icon: BookText,
 			label: t('contributing.buttons.docs.label'),
 			variant: 'default',
