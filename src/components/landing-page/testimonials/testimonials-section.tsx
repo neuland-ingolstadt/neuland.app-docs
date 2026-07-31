@@ -101,7 +101,7 @@ export function TestimonialsSection() {
 					<div className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
 						{testimonials.map((testimonial, index) => (
 							<TestimonialCard
-								key={`testimonial-${testimonial.author}-${index}`}
+								key={testimonial.author}
 								testimonial={{
 									...testimonial,
 									delay: 0.2 + index * 0.1
