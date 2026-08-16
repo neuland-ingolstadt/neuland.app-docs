@@ -397,7 +397,7 @@ export function HeroSection() {
 									repeat: Infinity,
 									ease: 'easeInOut'
 								}}
-								className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-2xl bg-black/20 backdrop-blur-xs border border-white/5 shadow-xl flex items-center justify-center z-[9999]"
+								className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-2xl bg-black/20 backdrop-blur-xs border border-white/5 shadow-xl flex items-center justify-center z-20"
 							>
 								<NeulandLogo
 									className="w-20 h-20 object-contain"
