@@ -16,5 +16,5 @@ Esplanade 10\
 **Registry court:** Amtsgericht Ingolstadt\
 **Register number:** VR 201088
 
-**Represented by:** Felix Weber, Timo Weese, Philipp Opheys\
+**Represented by:** Felix Weber, Nico Märtin, Ronja Meitz\
 **Responsible for the content:** Felix Weber
