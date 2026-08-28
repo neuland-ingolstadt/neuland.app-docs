@@ -1,4 +1,4 @@
-FROM node:24-alpine AS base
+FROM node:24.20.0-alpine@sha256:e67514e5d0f6c46656005e1b693b2ec9d52e80b641307de684d4a015ba7a4eaf AS base
 
 FROM oven/bun@sha256:5ff609364c049b54eb0ff560ec96319729a972078ef2c755d758f0c6ef89c2d6 AS deps
 WORKDIR /app
@@ -23,7 +23,7 @@ ENV NEXT_PUBLIC_COMMIT_HASH=${COMMIT_HASH}
 RUN npm run build --webpack
 
 # Production image, copy all the files and run next
-FROM node:24-alpine AS runner
+FROM node:24.20.0-alpine@sha256:e67514e5d0f6c46656005e1b693b2ec9d52e80b641307de684d4a015ba7a4eaf AS runner
 WORKDIR /app
 
 ARG COMMIT_HASH
