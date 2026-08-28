@@ -47,7 +47,7 @@
     "nextra-theme-docs@4.6.1": "patches/nextra-theme-docs@4.3.0-alpha.22.patch"
   },
   "overrides": {
-    "@types/react": "19.2.7",
-    "@types/react-dom": "19.2.3"
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5"
   }
 }
