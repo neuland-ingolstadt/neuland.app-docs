@@ -230,7 +230,7 @@ export function AboutSection() {
 						<div className="h-16 flex items-center">
 							<Link
 								className="inline-block text-foreground hover:opacity-80 transition-opacity "
-								href="https://hetzner.com"
+								href="https://www.hetzner.com/?mtm_campaign=neuland_ingolstadt&mtm_medium=referral&mtm_content=sponsoring_link"
 								target="_blank"
 							>
 								<HetznerLogo
