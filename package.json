@@ -35,7 +35,7 @@
   "devDependencies": {
     "@biomejs/biome": "2.5.13",
     "@tailwindcss/postcss": "4.3.3",
-    "@types/node": "25.9.6",
+    "@types/node": "25.9.7",
     "@types/react": "19.3.0",
     "@types/react-dom": "19.3.0",
     "pagefind": "1.5.2",
