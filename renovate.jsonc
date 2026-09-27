@@ -1,4 +1,10 @@
 {
-    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["github>neuland-ingolstadt/renovate-config:web"]
-  }
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>neuland-ingolstadt/renovate-config:web"
+  ],
+  "platformAutomerge": false,
+  "automergeType": "pr",
+  "automergeStrategy": "squash",
+  "automerge": true
+}
