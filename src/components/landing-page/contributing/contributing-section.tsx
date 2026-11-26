@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github } from 'lucide-react'
+import { Github } from 'lucide-brands'
 import { useTranslation } from '@/lib/useTranslations'
 import { SectionHeader } from '../section-header'
 import { ContributingButtons } from './contributing-buttons'

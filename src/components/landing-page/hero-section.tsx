@@ -1,10 +1,10 @@
 'use client'
 import { motion } from 'framer-motion'
+import { Github } from 'lucide-brands'
 import {
 	Calendar,
 	Clock,
 	Download,
-	Github,
 	Globe,
 	Lock,
 	MapPin,

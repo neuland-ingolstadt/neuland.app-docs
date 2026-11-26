@@ -1,12 +1,6 @@
 'use client'
-import {
-	ExternalLink,
-	Github,
-	Linkedin,
-	ScrollText,
-	ShieldCheck,
-	ShieldIcon
-} from 'lucide-react'
+import { Github, Linkedin } from 'lucide-brands'
+import { ExternalLink, ScrollText, ShieldCheck, ShieldIcon } from 'lucide-react'
 import { useTranslation } from '@/lib/useTranslations'
 import NeulandLogo from './icons/logo'
 

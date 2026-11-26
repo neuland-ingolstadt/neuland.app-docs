@@ -13,6 +13,7 @@
         "class-variance-authority": "0.7.1",
         "clsx": "2.1.1",
         "framer-motion": "14.14.0",
+        "lucide-brands": "1.2.0",
         "lucide-react": "1.78.0",
         "next": "16.4.6",
         "next-intl": "4.15.3",
@@ -875,6 +876,8 @@
     "lodash-es": ["lodash-es@4.17.21", "", {}, "sha512-mKnC+QJ9pWVzv+C4/U3rRsHapFfHvQFoFB92e52xeyGMcX6/OlIl78je1u8vePzYZSkkogMPJ2yjxxsb89cxyw=="],
 
     "longest-streak": ["longest-streak@3.1.0", "", {}, "sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g=="],
+
+    "lucide-brands": ["lucide-brands@1.2.0", "", { "peerDependencies": { "@lucide/vue": ">=1.0.0", "lucide-react": ">=1.0.0", "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0", "vue": ">=3.2.0" }, "optionalPeers": ["@lucide/vue", "lucide-react", "react", "vue"], "bin": { "lucide-brands": "cli/index.mjs" } }, "sha512-YCakl16LsYsvnski50KPWqEEfzGxOEiFjUg2fIOe3MIqM6Z0f9aZPeM/FBoiHRnCpbXTIPDD7QB3k0kiq4ddjw=="],
 
     "lucide-react": ["lucide-react@1.78.0", "", { "peerDependencies": { "@types/react": "*", "react": "^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0" }, "optionalPeers": ["@types/react"] }, "sha512-61NFdT5ZfAY8xs3LWKkB78GVeuiCcjYFEXeHWxWP+mQhP+UWLGsA9hJZQPtIyXRDhOvT8kgmWwAIyH5L7RIhAA=="],
 

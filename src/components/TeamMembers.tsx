@@ -1,4 +1,5 @@
-import { Github, Instagram, Linkedin, LinkIcon } from 'lucide-react'
+import { Github, Instagram, Linkedin } from 'lucide-brands'
+import { LinkIcon } from 'lucide-react'
 import Image from 'next/image'
 
 interface TeamMember {
