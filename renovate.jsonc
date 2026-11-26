@@ -6,5 +6,13 @@
   "platformAutomerge": false,
   "automergeType": "pr",
   "automergeStrategy": "squash",
-  "automerge": true
+  "automerge": true,
+  "packageRules": [
+    {
+      "description": "Nextra Twoslash breaks on TypeScript 7 (readFile on undefined). Keep on 5.x until twoslash supports it.",
+      "matchPackageNames": ["typescript"],
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ]
 }
